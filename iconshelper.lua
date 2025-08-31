@@ -2,7 +2,7 @@
 -- Test. do not use this.
 
 local Icons = {
-    ["lucide"] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Footagesus/Icons/refs/heads/main/lucide/dist/Icons.lua"))()
+    ["lucide"] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/yuxxxxscrripts/winduifix/refs/heads/main/icons.lua"))()
 }
 
 -- ADD YOUR GLACIER ICON TO THE LUCIDE ICONS SET
