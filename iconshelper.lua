@@ -13,7 +13,7 @@ Icons["lucide"].Icons["glacier"] = {
 }
 
 -- Also add the spritesheet reference if it's not already there
-Icons["lucide"].Spritesheets["18"] = "rbxassetid://128013387107453"
+Icons["lucide"].Spritesheets["18"] = "rbxassetid://76034379016762"
 
 local IconModule = {
     IconsType = "lucide",
