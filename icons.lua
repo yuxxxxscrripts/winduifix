@@ -2360,7 +2360,7 @@ return {
             ImageRectPosition = Vector2.new(896, 128),
             ImageRectSize = Vector2.new(128, 128),
         },
-        ["glacier"] = {
+        glacier = {
             Image = 8,
             ImageRectPosition = Vector2.new(0, 256),
             ImageRectSize = Vector2.new(128, 128),
