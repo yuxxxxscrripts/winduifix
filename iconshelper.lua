@@ -1,11 +1,19 @@
 -- This is a new version 
-
 -- Test. do not use this.
 
 local Icons = {
     ["lucide"] = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Footagesus/Icons/refs/heads/main/lucide/dist/Icons.lua"))()
 }
 
+-- ADD YOUR GLACIER ICON TO THE LUCIDE ICONS SET
+Icons["lucide"].Icons["glacier"] = {
+    ImageRectPosition = Vector2.new(0, 0),
+    ImageRectSize = Vector2.new(96, 96),
+    Image = 18, -- Make sure this matches your spritesheet number
+}
+
+-- Also add the spritesheet reference if it's not already there
+Icons["lucide"].Spritesheets["18"] = "rbxassetid://128013387107453"
 
 local IconModule = {
     IconsType = "lucide",
@@ -127,7 +135,7 @@ function IconModule.Image(IconConfig)
             for _, part in next, IconLabel[2].Parts do
                 local IconPartLabel = IconModule.Icon(part, Icon.Type)
                 
-                local IconPart = Instance.New("ImageLabel")
+                local IconPart = Instance.new("ImageLabel")
                 IconPart.Size = UDim2.new(1,0,1,0)
                 IconPart.BackgroundTransparency = 1
                 IconPart.ImageColor3 = Colors[1 + _].Color
